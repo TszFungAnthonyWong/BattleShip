@@ -1,0 +1,11 @@
+/Users/Anthony/Documents/BattleShip/battleship-dotnet/bin/Debug/netcoreapp2.2/battleship-dotnet.deps.json
+/Users/Anthony/Documents/BattleShip/battleship-dotnet/bin/Debug/netcoreapp2.2/battleship-dotnet.runtimeconfig.json
+/Users/Anthony/Documents/BattleShip/battleship-dotnet/bin/Debug/netcoreapp2.2/battleship-dotnet.runtimeconfig.dev.json
+/Users/Anthony/Documents/BattleShip/battleship-dotnet/bin/Debug/netcoreapp2.2/battleship-dotnet.dll
+/Users/Anthony/Documents/BattleShip/battleship-dotnet/bin/Debug/netcoreapp2.2/battleship-dotnet.pdb
+/Users/Anthony/Documents/BattleShip/battleship-dotnet/obj/Debug/netcoreapp2.2/battleship-dotnet.csprojAssemblyReference.cache
+/Users/Anthony/Documents/BattleShip/battleship-dotnet/obj/Debug/netcoreapp2.2/battleship-dotnet.csproj.CoreCompileInputs.cache
+/Users/Anthony/Documents/BattleShip/battleship-dotnet/obj/Debug/netcoreapp2.2/battleship-dotnet.AssemblyInfoInputs.cache
+/Users/Anthony/Documents/BattleShip/battleship-dotnet/obj/Debug/netcoreapp2.2/battleship-dotnet.AssemblyInfo.cs
+/Users/Anthony/Documents/BattleShip/battleship-dotnet/obj/Debug/netcoreapp2.2/battleship-dotnet.dll
+/Users/Anthony/Documents/BattleShip/battleship-dotnet/obj/Debug/netcoreapp2.2/battleship-dotnet.pdb
