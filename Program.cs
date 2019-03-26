@@ -8,8 +8,8 @@ namespace battleship_dotnet
         {
             Board b = new Board();
             Game g = new Game();
-            int gameboardWidth = 2;
-            int gameboardHeight = 2;
+            int gameboardWidth = 10;
+            int gameboardHeight = 10;
             int[,] gameBoardOne = b.createBoard(gameboardHeight, gameboardWidth);
             int[,] gameBoardTwo = b.createBoard(gameboardHeight, gameboardWidth);
             string winner = "";
