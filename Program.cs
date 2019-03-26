@@ -14,7 +14,8 @@ namespace battleship_dotnet
             int[,] gameBoardTwo = b.createBoard(gameboardHeight, gameboardWidth);
             string winner = "";
             Boolean player1Turn = true;
-
+            
+            //Game set up
             Console.WriteLine("----------### Battel Ship ###---------- ");
             Console.WriteLine("Please enter player 1 Name:");
             Console.Write(">");
@@ -42,6 +43,8 @@ namespace battleship_dotnet
 
             Console.WriteLine("<------!!!GAME START!!!------>");
             Console.ReadLine();
+
+            //Loop the game when there are no winner 
             while (winner == "")
             {
                 if (player1Turn == true)
@@ -51,8 +54,6 @@ namespace battleship_dotnet
                     g.fireMissle(gameBoardTwo);
                     g.showInGameBoard(gameBoardTwo);
                     winner = g.checkWinner(gameBoardTwo, p1Name);
-
-                    Console.WriteLine();
                     Console.ReadLine();
                     player1Turn = false;
                 }
@@ -115,17 +116,17 @@ namespace battleship_dotnet
 
             if (direction == 1) //horizontal Add
             {
-                if (xPosition + shipSize <= column)
+                if (xPosition + shipSize <= column) // check if the position are possible
                 {
                     Boolean collaps = false;
-                    for (int counter = 0; counter < shipSize; counter++)
+                    for (int counter = 0; counter < shipSize; counter++) // check the slot availibity
                     {
                         if (board[yPosition, xPosition + counter] != 0)
                         {
                             collaps = true;
                         }
                     }
-                    if (collaps == false)
+                    if (collaps == false)   
                     {
                         for (int counter = 0; counter < shipSize; counter++)
                         {
@@ -179,7 +180,6 @@ namespace battleship_dotnet
         }
         public int[,] createBoard(int row, int column)
         {
-
             int[,] board = new int[row, column];
             for (int rowCounter = 0; rowCounter < board.GetLength(0); rowCounter++)
             {
