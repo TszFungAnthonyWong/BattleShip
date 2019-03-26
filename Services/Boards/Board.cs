@@ -1,8 +1,20 @@
 
 using System;
-
-class Board
+namespace battleship_dotnet.Services.Boards
+{
+class Board:IBoard
     {
+        private readonly int _row = 10;
+        private readonly int _column = 10;
+        public Board(int row, int column)
+        {
+            _row = row;
+            _column = column;
+        }
+        public Board()
+        {
+            
+        }
         public void addShip(int[,] board, int shipSize)
         {
             int row = board.GetLength(0);
@@ -107,9 +119,10 @@ class Board
                 }
             }
         }
-        public int[,] createBoard(int row, int column)
+        public int[,] createBoard()
         {
-            int[,] board = new int[row, column];
+            
+            int[,] board = new int[_row, _column];
             for (int rowCounter = 0; rowCounter < board.GetLength(0); rowCounter++)
             {
                 for (int columnCounter = 0; columnCounter < board.GetLength(1); columnCounter++)
@@ -150,3 +163,4 @@ class Board
             Console.WriteLine("Y");
         }
     }
+}
